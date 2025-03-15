@@ -1,0 +1,33 @@
+body{
+    /* background-image: url("../assets/image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:700px; */
+    width:100%;
+}   
+
+.navbar li{
+    list-style-type: none;
+    color:#2e1834 ;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #2e1834;
+}
+.navbar{
+    display: flex;
+    gap: 150px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.navbar img{
+    margin-top: -50px;
+    width:250px;
+    height:150px;
+}
+

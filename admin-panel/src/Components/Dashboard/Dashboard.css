@@ -1,0 +1,78 @@
+/* Dashboard.css */
+
+/* General container styling */
+.dashboard-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styling */
+.user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-form input,
+.user-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.user-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.user-form button:hover {
+    background-color: #0056b3;
+}
+
+/* User list */
+.user-list {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.user-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f8f8f8;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.user-list button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.user-list button:hover {
+    background: darkred;
+}

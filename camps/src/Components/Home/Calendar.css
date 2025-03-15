@@ -1,0 +1,145 @@
+.booking-container {
+    background-color:#2e1834;
+    color: white;
+    padding: 20px;
+    margin-top: 300px;
+    border-radius: 10px;
+    height: 100px;
+    align-content: center;
+    max-width:1200px;
+    margin-left: 200px;
+    margin-right:200px;
+}
+
+.booking-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 0.25fr);
+    /* Reduce column width */
+    align-items: center;
+    gap: 8px;
+    /* Reduce space between elements */
+}
+
+.input-group {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.input-group-room {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.input-group input{
+    width:200px;
+    height:30px;
+}
+.custom-number-input {
+    display: flex;
+    position: relative;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Match Adults/Children style */
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.custom-number-input input {
+    width: 120px;
+    height: 100%;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    color: white;
+    padding-right: 20px;
+    /* Space for arrows */
+}
+
+/* Hide default number input arrows */
+.custom-number-input input::-webkit-outer-spin-button,
+.custom-number-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.controls {
+    position: absolute;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.controls button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    color: #ffd700;
+    /* Highlight on hover */
+}
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.booking-options {
+    display: flex;
+    gap: 40px;
+    width: 420px;
+    align-items: center;
+}
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    padding: 8px;
+    padding-left: 30px;
+    border: 1px solid#FFFFFF;
+    border-radius: 5px;
+    background: transparent;
+    color: #F5E1C8;
+}
+
+.input-wrapper .icon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color:#ce9ea5;
+}
+
+select {
+    width: 120px;
+    height:50px;
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    color: white;
+    gap:30px;
+}
+
+.search-button {
+    grid-column: span 5;
+    background-color:#ce9ea5;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-group button{
+    margin-top: 20px;
+    width: 100px;
+    height:50px;
+}

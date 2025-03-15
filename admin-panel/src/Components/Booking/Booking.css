@@ -1,0 +1,80 @@
+.booking-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.booking-container h2 {
+    color: #333;
+}
+
+.booking-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.booking-container input,
+.booking-container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.booking-container button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-container button:hover {
+    background: #0056b3;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+        .room-slots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .room-slot {
+            padding: 10px 15px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            cursor: pointer;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .room-slot:hover {
+            background: #007bff;
+            color: white;
+        }
+
+        .room-slot.selected {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+
+        button[disabled] {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }

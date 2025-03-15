@@ -1,0 +1,128 @@
+.about-head .heading{
+    margin-top: 200px;
+    color: white;
+    text-align: center;
+
+}
+.about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-top: 20px;
+}
+
+.about-in {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-in li {
+    font-size: 1.1rem;
+    color: #444;
+    padding: 8px 0;
+}
+
+.about-container p:last-child {
+    font-weight: bold;
+}
+.about-in {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.about-in h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-vcard-inner {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-vcard-inner:hover {
+    transform: translateY(-5px);
+}
+
+.about-vcard-inner h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-vcard-inner p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+} 
+
+.icon-container img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+   
+} 
+
+.double-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Hollow arrow */
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid white;
+    opacity: 0.7;
+    animation: bounce 1.5s infinite;
+}
+
+/* Animation for 24X7 Customer Support Card */
+.transform-onload {
+    transform: scale(1.18);
+    transition: transform 0.8s ease-in-out;
+}

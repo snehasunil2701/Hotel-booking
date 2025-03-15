@@ -1,0 +1,222 @@
+.room-head-inner h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.room-head-inner p{
+    text-align: center;
+    color: white;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+        line-height: 1.6;
+    font-size: 28px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight: 500;
+}
+.room-head-inner{
+    height: 400px;
+    padding-top: 150px;
+}
+.rooms-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.room-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: left;
+}
+
+.room-swiper {
+  width: 100%;
+  height: 250px;
+}
+
+.room-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.room-content {
+  padding: 20px;
+}
+
+.room-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d2d2d;
+}
+
+.room-size {
+  font-weight: bold;
+  color: #555;
+}
+
+.room-view {
+  color: #2e1834;
+}
+
+.room-description {
+  margin-top: 10px;
+  color: #666;
+}
+
+.room-amenities {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.room-amenities summary {
+  font-weight: bold;
+  color: #2e1834;
+  cursor: pointer;
+}
+
+.view-rates {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #2e1834;
+  background: white;
+  color: #2e1834;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.view-rates:hover {
+  background: #2e1834;
+  color: white;
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+  .rooms-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .rooms-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.package-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    padding-top: 80px;
+}
+
+/* The Hanging Bar */
+.hanging-bar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 8px;
+    background: #2e1834;
+    /* Dark purple shade */
+    border-radius: 4px;
+}
+
+/* Cards in a row */
+.hanging-card {
+    background: linear-gradient(135deg, #2e1834, #ce9ea5);
+    /* Dark to soft pink */
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    width: 280px;
+    padding: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Strings connecting the bar to the cards */
+.hanging-card::before {
+    content: "";
+    width: 3px;
+    height: 80px;
+    /* Adjust based on spacing */
+    background: #ce9ea5;
+    /* Soft pink */
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Swing Animation */
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.hanging-card {
+    animation: swing 3s ease-in-out infinite alternate;
+}
+
+/* Hover Effect */
+.hanging-card:hover {
+    transform: translateY(-10px) rotate(0deg);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styling */
+.package-btn {
+    background: #ce9ea5;
+    /* Soft pink */
+    color: #2e1834;
+    /* Dark purple text */
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.package-btn:hover {
+    background: #2e1834;
+    color: #ce9ea5;
+    transform: scale(1.1);
+}

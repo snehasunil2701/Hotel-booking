@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-family: 'Old Standard TT', serif;
+    background-image: url("../assets/home/home1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+}
+
+/* Apply font to all headings and paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+    font-family: 'Old Standard TT', serif;
+}
+.home1{
+    width:100%;
+    height:600px;
+}
+.home1 h1{
+    text-align: center;
+    margin-top: 180px;
+    color: white;
+    /* color:#ce9ea5; */
+    font-size: 40px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/* Arrow container */
+.double-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Hollow arrow */
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid white;
+    opacity: 0.7;
+    animation: bounce 1.5s infinite;
+}
+
+/* Second arrow (smaller and delayed animation) */
+.second {
+    border-top: 15px solid white;
+    margin-top: -5px;
+    animation: bounce 1.5s infinite 0.3s;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.home-card{
+    margin-left: 100px;
+    display: flex;
+}
+
+.home-card img{
+    border-radius: 20px;
+}
+
+.home-card-right{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.home-card-right h1{
+    font-size: 45px;
+}
+
+.home-card-right p{
+    font-size: 20px;
+}
+
+.home-btn{
+    width:100px;
+    height:50px;
+    margin-top: 50px;
+    margin-left: 150px;
+    color:white;
+    background-color: #2e1834;
+}
+
+.home-card-3inner img {
+    width: 400px;
+    height: 350px;
+    border-radius: 0px;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.home-card-3inner img:hover {
+    transform: scale(0.98);
+}
+
+.home-card-3{
+    margin: 100px;
+    display: flex;
+    gap:60px;
+}
+
+.home-card-3inner h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+.home-card-3inner p{
+    text-align: center;
+}
+.head-image img{
+    width:100%;
+    height:700px;
+}
+
+.head-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.head-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent overlay */
+    display: flex;
+    align-items:flex-start;
+}
+
+.overlay-content {
+    background: white;
+    padding: 20px;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 10px;
+    text-align: center;
+    width: 600px;
+    height: 400px;
+}
+
+.overlay-content h3 {
+    color: #2e1834;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.overlay-content h1 {
+    font-size: 38px;
+    color: #2e1834;
+    line-height: 1.2;
+}
+
+.overlay-content p {
+    font-size: 20px;
+    color:#ce9ea5;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 20px;
+    color: #d9534f;
+    margin-top: 10px;
+}
+
+.book-now {
+    background: #2e1834;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Date picker */
+
+.booking-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.date-picker-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-picker {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
